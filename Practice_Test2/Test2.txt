@@ -1,0 +1,25 @@
+DBMS Aptitude Test:
+===================
+
+Scenario:
+--------
+
+You are given following two tables. We want you to write the queries as mentioned in Questions below.
+
+	batch 		: 	{  id, customer_id, type, received_date, status, completed_date  }
+	document 	: 	{  id, batch_id, status, insured_name, insured_address, claimed_charge}
+
+
+
+Steps:
+-----
+	1) Create tables batch and document in mysql
+	2) Insert the data provided in dbtest.sql
+	3) Write the queries to answer the following questions
+
+
+Questions:
+---------
+	1) Find total claimed_charge for the completed batches per batch type.
+	2) Find the number of documents received per customer, per batch type that are received before 6/10. Display the following columns as result:
+		num_of_documents, customer_id, batch_type
