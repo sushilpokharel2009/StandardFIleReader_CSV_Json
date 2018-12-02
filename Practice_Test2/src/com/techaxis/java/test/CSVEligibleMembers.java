@@ -98,7 +98,7 @@ public class CSVEligibleMembers extends MemberFileConverter {
 		// return new list
 		List<EligibilityInfo> eligibilityInfoList = new ArrayList<>();
 		for(EligibilityInfo nonDuplicateEligilibilityInfo : eligibilityInfo) {
-			if(!eligibilityInfoList.isEmpty()) {
+			if(eligibilityInfoList.isEmpty()) {
 				eligibilityInfoList.add(nonDuplicateEligilibilityInfo);
 			}else {
 				
